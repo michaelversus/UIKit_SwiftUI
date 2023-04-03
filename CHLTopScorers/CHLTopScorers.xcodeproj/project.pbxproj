@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D07707629BF1B130040C121 /* ScorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07707529BF1B130040C121 /* ScorerViewController.swift */; };
+		3D11502829DADFF3003FEEE4 /* TopScorersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11502729DADFF3003FEEE4 /* TopScorersView.swift */; };
+		3D11502A29DAF358003FEEE4 /* ScorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11502929DAF358003FEEE4 /* ScorerView.swift */; };
+		3D11502E29DB095D003FEEE4 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11502D29DB095D003FEEE4 /* Example.swift */; };
+		3DF5494C29BCC54E004FCA19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5494B29BCC54E004FCA19 /* AppDelegate.swift */; };
+		3DF5494E29BCC54E004FCA19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5494D29BCC54E004FCA19 /* SceneDelegate.swift */; };
+		3DF5495029BCC54E004FCA19 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5494F29BCC54E004FCA19 /* InitialViewController.swift */; };
+		3DF5495529BCC54F004FCA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF5495429BCC54F004FCA19 /* Assets.xcassets */; };
+		3DF5495829BCC54F004FCA19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF5495629BCC54F004FCA19 /* LaunchScreen.storyboard */; };
+		3DF5496129BD026F004FCA19 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3DF5496029BD026F004FCA19 /* Alamofire */; };
+		3DF5496329BD0AC4004FCA19 /* TopScorersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5496229BD0AC4004FCA19 /* TopScorersTableViewController.swift */; };
+		3DF5496729BD122C004FCA19 /* TopScorers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5496629BD122C004FCA19 /* TopScorers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D07707529BF1B130040C121 /* ScorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorerViewController.swift; sourceTree = "<group>"; };
+		3D11502729DADFF3003FEEE4 /* TopScorersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersView.swift; sourceTree = "<group>"; };
+		3D11502929DAF358003FEEE4 /* ScorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorerView.swift; sourceTree = "<group>"; };
+		3D11502D29DB095D003FEEE4 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		3DF5494829BCC54E004FCA19 /* CHLTopScorers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHLTopScorers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF5494B29BCC54E004FCA19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DF5494D29BCC54E004FCA19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DF5494F29BCC54E004FCA19 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		3DF5495429BCC54F004FCA19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DF5495729BCC54F004FCA19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DF5495929BCC54F004FCA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF5496229BD0AC4004FCA19 /* TopScorersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersTableViewController.swift; sourceTree = "<group>"; };
+		3DF5496629BD122C004FCA19 /* TopScorers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DF5494529BCC54E004FCA19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF5496129BD026F004FCA19 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D11502629DADFD1003FEEE4 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3D11502729DADFF3003FEEE4 /* TopScorersView.swift */,
+				3D11502929DAF358003FEEE4 /* ScorerView.swift */,
+				3D11502D29DB095D003FEEE4 /* Example.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		3DF5493F29BCC54E004FCA19 = {
+			isa = PBXGroup;
+			children = (
+				3DF5494A29BCC54E004FCA19 /* CHLTopScorers */,
+				3DF5494929BCC54E004FCA19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DF5494929BCC54E004FCA19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF5494829BCC54E004FCA19 /* CHLTopScorers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF5494A29BCC54E004FCA19 /* CHLTopScorers */ = {
+			isa = PBXGroup;
+			children = (
+				3DF5494B29BCC54E004FCA19 /* AppDelegate.swift */,
+				3DF5494D29BCC54E004FCA19 /* SceneDelegate.swift */,
+				3DF5496529BD120E004FCA19 /* Models */,
+				3DF5496429BD11E5004FCA19 /* UIKit */,
+				3D11502629DADFD1003FEEE4 /* SwiftUI */,
+				3DF5495429BCC54F004FCA19 /* Assets.xcassets */,
+				3DF5495629BCC54F004FCA19 /* LaunchScreen.storyboard */,
+				3DF5495929BCC54F004FCA19 /* Info.plist */,
+			);
+			path = CHLTopScorers;
+			sourceTree = "<group>";
+		};
+		3DF5496429BD11E5004FCA19 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3DF5494F29BCC54E004FCA19 /* InitialViewController.swift */,
+				3DF5496229BD0AC4004FCA19 /* TopScorersTableViewController.swift */,
+				3D07707529BF1B130040C121 /* ScorerViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		3DF5496529BD120E004FCA19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DF5496629BD122C004FCA19 /* TopScorers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DF5494729BCC54E004FCA19 /* CHLTopScorers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF5495C29BCC54F004FCA19 /* Build configuration list for PBXNativeTarget "CHLTopScorers" */;
+			buildPhases = (
+				3DF5494429BCC54E004FCA19 /* Sources */,
+				3DF5494529BCC54E004FCA19 /* Frameworks */,
+				3DF5494629BCC54E004FCA19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHLTopScorers;
+			packageProductDependencies = (
+				3DF5496029BD026F004FCA19 /* Alamofire */,
+			);
+			productName = CHLTopScorers;
+			productReference = 3DF5494829BCC54E004FCA19 /* CHLTopScorers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DF5494029BCC54E004FCA19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3DF5494729BCC54E004FCA19 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 3DF5494329BCC54E004FCA19 /* Build configuration list for PBXProject "CHLTopScorers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DF5493F29BCC54E004FCA19;
+			packageReferences = (
+				3DF5495F29BD026F004FCA19 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 3DF5494929BCC54E004FCA19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DF5494729BCC54E004FCA19 /* CHLTopScorers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF5494629BCC54E004FCA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF5495829BCC54F004FCA19 /* LaunchScreen.storyboard in Resources */,
+				3DF5495529BCC54F004FCA19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF5494429BCC54E004FCA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D11502829DADFF3003FEEE4 /* TopScorersView.swift in Sources */,
+				3DF5496729BD122C004FCA19 /* TopScorers.swift in Sources */,
+				3DF5495029BCC54E004FCA19 /* InitialViewController.swift in Sources */,
+				3D07707629BF1B130040C121 /* ScorerViewController.swift in Sources */,
+				3D11502A29DAF358003FEEE4 /* ScorerView.swift in Sources */,
+				3DF5496329BD0AC4004FCA19 /* TopScorersTableViewController.swift in Sources */,
+				3DF5494C29BCC54E004FCA19 /* AppDelegate.swift in Sources */,
+				3DF5494E29BCC54E004FCA19 /* SceneDelegate.swift in Sources */,
+				3D11502E29DB095D003FEEE4 /* Example.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DF5495629BCC54F004FCA19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF5495729BCC54F004FCA19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DF5495A29BCC54F004FCA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DF5495B29BCC54F004FCA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DF5495D29BCC54F004FCA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM2H4N373S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CHLTopScorers/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stoiximan.CHLTopScorers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DF5495E29BCC54F004FCA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM2H4N373S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CHLTopScorers/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stoiximan.CHLTopScorers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DF5494329BCC54E004FCA19 /* Build configuration list for PBXProject "CHLTopScorers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF5495A29BCC54F004FCA19 /* Debug */,
+				3DF5495B29BCC54F004FCA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF5495C29BCC54F004FCA19 /* Build configuration list for PBXNativeTarget "CHLTopScorers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF5495D29BCC54F004FCA19 /* Debug */,
+				3DF5495E29BCC54F004FCA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DF5495F29BD026F004FCA19 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DF5496029BD026F004FCA19 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DF5495F29BD026F004FCA19 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3DF5494029BCC54E004FCA19 /* Project object */;
+}

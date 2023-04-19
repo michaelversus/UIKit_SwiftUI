@@ -348,49 +348,6 @@ class SomePoodle: SomeDog {
 let poppy2 = SomePoodle()
 poppy2.makeNoise()
 
-// demo -> change to let name
-
-// MARK: Section 8 - Protocols and extensions
-
-// MARK: 72 Protocols
-// Protocols are a way of describing what properties and methods something must have. You then tell Swift which types use that protocol – a process known as adopting or conforming to a protocol.
-
-// MARK: 72 Protocols
-//protocol IdentifiableProtocol {
-//    var id: String { get set }
-//}
-//
-//struct Region: IdentifiableProtocol {
-//    var id: String
-//}
-//
-//func displayID(thing: IdentifiableProtocol) {
-//    print("My ID is \(thing.id)")
-//}
-//
-//let region = Region(id: "1")
-//displayID(thing: region)
-
-// MARK: 73 Protocol inheritance
-
-// One protocol can inherit from another in a process known as protocol inheritance. Unlike with classes, you can inherit from multiple protocols at the same time before you add your own customizations on top.
-
-protocol Payable {
-    func calculateWages() -> Int
-}
-
-protocol NeedsTraining {
-    func study()
-}
-
-protocol HasVacation {
-    func takeVacation(days: Int)
-}
-
-protocol Employee: Payable, NeedsTraining, HasVacation { }
-
-// Now we can make new types conform to that single protocol rather than each of the three individual ones.
-
 // MARK: 74 Extensions
  
 // Extensions allow you to add methods to existing types, to make them do things they weren’t originally designed to do.

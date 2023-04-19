@@ -11,6 +11,9 @@
 		3D11502829DADFF3003FEEE4 /* TopScorersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11502729DADFF3003FEEE4 /* TopScorersView.swift */; };
 		3D11502A29DAF358003FEEE4 /* ScorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11502929DAF358003FEEE4 /* ScorerView.swift */; };
 		3D11502E29DB095D003FEEE4 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11502D29DB095D003FEEE4 /* Example.swift */; };
+		3D75270A29F04A1A00DA91A1 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D75270829F04A1A00DA91A1 /* InitialViewController.xib */; };
+		3D75270E29F0521100DA91A1 /* TopScorersTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D75270C29F0521100DA91A1 /* TopScorersTableViewController.xib */; };
+		3D75271229F0538200DA91A1 /* ScorerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D75271029F0538200DA91A1 /* ScorerViewController.xib */; };
 		3DF5494C29BCC54E004FCA19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5494B29BCC54E004FCA19 /* AppDelegate.swift */; };
 		3DF5494E29BCC54E004FCA19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5494D29BCC54E004FCA19 /* SceneDelegate.swift */; };
 		3DF5495029BCC54E004FCA19 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF5494F29BCC54E004FCA19 /* InitialViewController.swift */; };
@@ -26,6 +29,9 @@
 		3D11502729DADFF3003FEEE4 /* TopScorersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersView.swift; sourceTree = "<group>"; };
 		3D11502929DAF358003FEEE4 /* ScorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorerView.swift; sourceTree = "<group>"; };
 		3D11502D29DB095D003FEEE4 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		3D75270829F04A1A00DA91A1 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		3D75270C29F0521100DA91A1 /* TopScorersTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopScorersTableViewController.xib; sourceTree = "<group>"; };
+		3D75271029F0538200DA91A1 /* ScorerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScorerViewController.xib; sourceTree = "<group>"; };
 		3DF5494829BCC54E004FCA19 /* CHLTopScorers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHLTopScorers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF5494B29BCC54E004FCA19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DF5494D29BCC54E004FCA19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				3DF5494F29BCC54E004FCA19 /* InitialViewController.swift */,
+				3D75270829F04A1A00DA91A1 /* InitialViewController.xib */,
 				3DF5496229BD0AC4004FCA19 /* TopScorersTableViewController.swift */,
+				3D75270C29F0521100DA91A1 /* TopScorersTableViewController.xib */,
 				3D07707529BF1B130040C121 /* ScorerViewController.swift */,
+				3D75271029F0538200DA91A1 /* ScorerViewController.xib */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -173,8 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D75270E29F0521100DA91A1 /* TopScorersTableViewController.xib in Resources */,
 				3DF5495829BCC54F004FCA19 /* LaunchScreen.storyboard in Resources */,
 				3DF5495529BCC54F004FCA19 /* Assets.xcassets in Resources */,
+				3D75271229F0538200DA91A1 /* ScorerViewController.xib in Resources */,
+				3D75270A29F04A1A00DA91A1 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

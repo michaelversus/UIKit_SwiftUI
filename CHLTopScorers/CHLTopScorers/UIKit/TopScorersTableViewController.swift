@@ -11,7 +11,7 @@ import Alamofire
 final class TopScorersTableViewController: UIViewController {
     private static let cellID = "playerCellID"
     private var scorers: [Scorer] = []
-    private let tableView: UITableView = UITableView()
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +19,7 @@ final class TopScorersTableViewController: UIViewController {
         navigationItem.title = "Champions League Top Scorers"
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: TopScorersTableViewController.cellID)
-        view.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
         fetchPlayers()
     }
     
@@ -73,17 +65,6 @@ extension TopScorersTableViewController: UITableViewDelegate, UITableViewDataSou
         let vc = ScorerViewController()
         vc.scorer = scorer
         navigationController?.pushViewController(vc, animated: true)
-        //navigationController?.present(vc, animated: true)
         tableView.cellForRow(at: indexPath)?.isSelected = false
     }
-}
-
-enum Auth {
-    static let headers: HTTPHeaders = [
-        "X-Auth-Token": "d682a98a0cb94edd82a78975ca433686"
-    ]
-}
-
-enum TopScorersAPI {
-    static let url = "http://api.football-data.org/v4/competitions/2001/scorers"
 }

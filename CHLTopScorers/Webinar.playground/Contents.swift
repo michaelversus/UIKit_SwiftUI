@@ -411,10 +411,10 @@ outerLoop: for i in 1...10 { // give label
 
 // MARK: 32 Skipping items
 
-for i in 1...10 {
-    if i % 2 == 1 {
-        continue
-    }
+for i in 1...10 where i % 2 == 0 {
+//    if i % 2 == 1 {
+//        continue
+//    }
 
     print(i)
 }
@@ -1051,20 +1051,19 @@ print(league.name)
 // MARK: 72 Protocols
 // Protocols are a way of describing what properties and methods something must have. You then tell Swift which types use that protocol – a process known as adopting or conforming to a protocol.
 
-//protocol Identifiable {
+// MARK: 72 Protocols
+//protocol IdentifiableProtocol {
 //    var id: String { get set }
 //}
-
-// We can’t create instances of that protocol - it’s a description of what we want, rather than something we can create and use directly. But we can create a struct that conforms to it:
-
-//struct Region: Identifiable {
+//
+//struct Region: IdentifiableProtocol {
 //    var id: String
 //}
-
-//func displayID(thing: Identifiable) {
+//
+//func displayID(thing: IdentifiableProtocol) {
 //    print("My ID is \(thing.id)")
 //}
-
+//
 //let region = Region(id: "1")
 //displayID(thing: region)
 
@@ -1232,7 +1231,7 @@ let usr = username(for: 15) ?? "Anonymous"
 // Swift provides us with a shortcut when using optionals: if you want to access something like a.b.c and b is optional, you can write a question mark after it to enable optional chaining: a.b?.c.
 let beatlesNames = ["John", "Paul", "George", "Ringo"]
 
-let beatl = names.first?.uppercased()
+let beatl = beatlesNames.first?.uppercased()
 
 // MARK: 83 Optional try
 

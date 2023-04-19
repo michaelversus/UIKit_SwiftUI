@@ -5,7 +5,17 @@
 //  Created by Michalis Karagiorgos L on 11/3/23.
 //
 
-import Foundation
+import Alamofire
+
+enum Auth {
+    static let headers: HTTPHeaders = [
+        "X-Auth-Token": "d682a98a0cb94edd82a78975ca433686"
+    ]
+}
+
+enum TopScorersAPI {
+    static let url = "http://api.football-data.org/v4/competitions/2001/scorers"
+}
 
 struct TopScorers: Decodable {
     let scorers: [Scorer]
@@ -16,6 +26,28 @@ struct Scorer: Decodable {
     let team: Team
     let goals: Int
     let assists, penalties: Int?
+}
+
+extension Scorer {
+    func info() -> [String] {
+        var items: [String] = []
+        items.append("Name: \(player.name)")
+        items.append("Position: \(player.position.rawValue)")
+        items.append("Date of birth: \(player.dateOfBirth)")
+        items.append("Nationality: \(player.nationality)")
+        if let shirtNumber = player.shirtNumber {
+            items.append("Shirt number: \(shirtNumber)")
+        }
+        items.append("Team: \(team.name)")
+        items.append("Goals: \(goals)")
+        if let assists {
+            items.append("Assists: \(assists)")
+        }
+        if let penalties {
+            items.append("Penalties: \(penalties)")
+        }
+        return items
+    }
 }
 
 struct Player: Decodable {

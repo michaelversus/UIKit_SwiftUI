@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="CHLTopScorers" customModuleProvider="target">
+            <connections>
+                <outlet property="swiftUIButton" destination="u4b-VD-lZ2" id="Q4b-db-ySO"/>
+                <outlet property="uiKitButton" destination="NuG-Cg-Mx3" id="FIo-F9-7zK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuG-Cg-Mx3">
+                    <rect key="frame" x="166.33333333333334" y="408.66666666666669" width="60.666666666666657" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="UIKit"/>
+                    <connections>
+                        <action selector="uiKitButtonTapped:" destination="-1" eventType="touchUpInside" id="6Dv-0C-OoD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4b-VD-lZ2">
+                    <rect key="frame" x="157.33333333333334" y="451" width="78.666666666666657" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="SwiftUI"/>
+                    <connections>
+                        <action selector="swiftUIButtonTapped:" destination="-1" eventType="touchUpInside" id="32C-ln-70t"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NuG-Cg-Mx3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Q0o-aW-pfA"/>
+                <constraint firstItem="u4b-VD-lZ2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mjm-vb-3Ux"/>
+                <constraint firstItem="u4b-VD-lZ2" firstAttribute="top" secondItem="NuG-Cg-Mx3" secondAttribute="bottom" constant="7.3333333333333144" id="wVQ-aE-teI"/>
+                <constraint firstItem="NuG-Cg-Mx3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zWx-fl-roR"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

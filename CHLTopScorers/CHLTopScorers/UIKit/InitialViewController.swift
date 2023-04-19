@@ -15,54 +15,24 @@ enum ElementOption: String {
 
 final class InitialViewController: UIViewController {
     private static let cellID = "basicCell"
-    private let tableView: UITableView = UITableView()
-    private let elements: [ElementOption] = [.uiKit, .swiftUI]
+    
+    @IBOutlet weak var uiKitButton: UIButton!
+    @IBOutlet weak var swiftUIButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
         navigationItem.title = "Options"
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: InitialViewController.cellID)
-        view.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
-    }
-}
-
-// MARK: UITableViewDelegate, UITableViewDataSource
-
-extension InitialViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        elements.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: InitialViewController.cellID, for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = elements[indexPath.row].rawValue
-        cell.contentConfiguration = content
-        return cell
+    @IBAction func uiKitButtonTapped(_ sender: Any) {
+        let topScorersTableViewController = TopScorersTableViewController()
+        navigationController?.pushViewController(topScorersTableViewController, animated: true)
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let option = elements[indexPath.row]
-        tableView.cellForRow(at: indexPath)?.isSelected = false
-        switch option {
-        case .uiKit :
-            let topScorersTableViewController = TopScorersTableViewController()
-            navigationController?.pushViewController(topScorersTableViewController, animated: true)
-        case .swiftUI :
-            let host = UIHostingController(rootView: TopScorersView())
-//            host.navigationItem.title = "Champions League Top Scorers"
-            navigationController?.present(host, animated: true)
-        }
+    @IBAction func swiftUIButtonTapped(_ sender: Any) {
+        let host = UIHostingController(rootView: TopScorersView())
+        host.navigationItem.title = "Champions League Top Scorers"
+        navigationController?.present(host, animated: true)
     }
 }

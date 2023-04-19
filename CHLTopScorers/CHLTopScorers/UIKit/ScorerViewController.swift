@@ -8,11 +8,11 @@
 import UIKit
 
 final class ScorerViewController: UIViewController {
+    private static let cellID = "scorerCell"
     var scorer: Scorer? = nil
-    private let tableView: UITableView = UITableView()
     private var scorerInfo: [String] = []
     
-    private static let cellID = "scorerCell"
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +21,7 @@ final class ScorerViewController: UIViewController {
         scorerInfo = scorer?.info() ?? []
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: ScorerViewController.cellID)
-        view.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
     }
 }
 
@@ -47,29 +39,5 @@ extension ScorerViewController: UITableViewDelegate, UITableViewDataSource {
         content.text = info
         cell.contentConfiguration = content
         return cell
-    }
-    
-
-}
-
-extension Scorer {
-    func info() -> [String] {
-        var items: [String] = []
-        items.append("Name: \(player.name)")
-        items.append("Position: \(player.position.rawValue)")
-        items.append("Date of birth: \(player.dateOfBirth)")
-        items.append("Nationality: \(player.nationality)")
-        if let shirtNumber = player.shirtNumber {
-            items.append("Shirt number: \(shirtNumber)")
-        }
-        items.append("Team: \(team.name)")
-        items.append("Goals: \(goals)")
-        if let assists {
-            items.append("Assists: \(assists)")
-        }
-        if let penalties {
-            items.append("Penalties: \(penalties)")
-        }
-        return items
     }
 }
